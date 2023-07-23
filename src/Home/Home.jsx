@@ -10,6 +10,7 @@ import {
 import axios from "axios";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import config from "./config";
 import "./Home.css";
 
 export default function Home() {
@@ -25,7 +26,7 @@ export default function Home() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const apiKey = "2ca26610bef6e492c0af80b4c7067fd5";
+      const apiKey = config.apiKey;
       const unit = "metric";
       const url1 =
         "https://api.openweathermap.org/data/2.5/weather?q=" +
