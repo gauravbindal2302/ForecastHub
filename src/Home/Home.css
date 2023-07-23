@@ -1,0 +1,485 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+.home {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(11, 19, 30);
+}
+
+.home-container {
+  height: 94vh;
+  margin: 0 12%;
+  display: flex;
+  padding: 3vh 1vw;
+}
+
+.col-1,
+.col-3,
+.row-1,
+.row-3,
+.row-4 {
+  background-color: rgb(32, 43, 59);
+  color: rgb(147, 153, 162);
+  font-family: "Rubik", sans-serif;
+  margin: 0 auto;
+  border-radius: 24px;
+}
+
+.col-1 {
+  width: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-1 .svg-inline--fa {
+  height: 25px;
+  padding: 20px 25px;
+  color: rgb(82, 122, 233);
+}
+
+.col-1 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col-1 ul li {
+  margin: 8px 0;
+  font-weight: bold;
+  transition: 1.4s ease-in-out;
+  color: #60709e;
+}
+
+.col-1 ul li:hover {
+  transform: scale(1.5);
+  color: rgb(220, 191, 153);
+}
+
+.col-2 {
+  width: 40vw;
+}
+
+.col-3 {
+  width: 24vw;
+}
+
+.row-1,
+.row-2,
+.row-3 {
+  margin: 2.5% auto;
+}
+
+.row-1 {
+  height: 7%;
+  margin-top: 0;
+}
+
+.row-1 form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.row-1 input[type="name"] {
+  outline: none;
+  border: none;
+  font-size: 15px;
+  padding: 12px 30px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(32, 43, 59);
+  color: rgb(147, 153, 162);
+  font-family: "Rubik", sans-serif;
+  border-radius: 24px 0 0 24px;
+}
+
+.row-1 button {
+  background-color: rgb(32, 43, 59);
+  color: rgb(147, 153, 162);
+  border: none;
+  font-size: 15px;
+  padding: 13px 30px;
+  cursor: pointer;
+  border-radius: 0 24px 24px 0;
+}
+
+.row-1 button .svg-inline--fa {
+  width: 16px;
+  height: 16px;
+}
+
+.row-2 {
+  height: 26%;
+  color: #d4d1d1;
+  margin-top: -10px;
+}
+
+.row-2 .row-2-col-1-row-1 {
+  width: 50%;
+  padding: 0.5px 40px;
+}
+
+.row-2 .row-2-col-1-row-1 h1 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.row-2 .row-2-col-1-row-1 p {
+  margin-top: -10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(220, 191, 153);
+  text-transform: capitalize;
+}
+
+.row-2 .row-2-col-1-row-2 {
+  width: 50%;
+  padding-top: -10px;
+}
+
+.row-2 .row-2-col-1-row-2 span {
+  font-size: 45px;
+  font-weight: 800;
+  padding-left: 40px;
+}
+
+.row-2 .row-2-col-2 {
+  width: 50%;
+  position: absolute;
+  right: 70px;
+  top: 100px;
+}
+
+.row-2 .row-2-col-2 img {
+  width: 130px;
+  height: 130px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.row-3 {
+  margin-top: 30px;
+  height: 25%;
+  padding: 10px 25px 0px 25px;
+}
+
+.row-3 .row-3-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1px;
+}
+
+.row-3 .row-3-header h1,
+.col-3 .col-3-header h1,
+.row-4 .row-4-container h1 {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.row-3 .row-3-header label {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(220, 191, 153);
+}
+
+.row-3 .carousel .hourly-col {
+  min-width: 69.4px;
+  min-height: 110px;
+  color: rgb(147, 153, 162);
+  margin: 0px;
+  padding: 0 15px 10px 15px;
+}
+
+.row-3 .carousel .hourly-col p {
+  white-space: nowrap;
+  font-weight: 700;
+  font-family: "Rubik", sans-serif;
+  font-size: 13px;
+}
+
+.row-3 .carousel .hourly-col img {
+  width: 45px;
+  height: 43px;
+  background-color: #938d8d;
+  border-radius: 50%;
+  border: 1px solid rgb(147, 153, 162);
+  margin-bottom: 10px;
+}
+
+.row-3 .carousel .hourly-col span {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 8px;
+}
+
+.row-4 {
+  height: 33.2%;
+}
+
+.row-4-container {
+  display: flex;
+  width: 100%;
+  padding: 10px 25px;
+}
+
+.row-4 .row-4-container .main-col {
+  width: 50%;
+  position: relative;
+}
+
+.row-4 .row-4-container .main-col:after,
+.wind-col:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 200px;
+  transform: translateY(50%);
+  bottom: 0;
+  top: -95px;
+  right: 0;
+  background: rgb(147, 153, 162);
+}
+
+.row-4 .row-4-container .main-col .main-row-1,
+.row-4 .row-4-container .main-col .main-row-2 {
+  display: flex;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.row-4 .row-4-container .main-col .main-col-1,
+.main-col-2,
+.main-col-3,
+.main-col-4 {
+  width: 50%;
+}
+
+.wind-col {
+  position: relative;
+}
+
+.row-4 .row-4-container .wind-col {
+  width: 20%;
+  padding-left: 15px;
+}
+
+.row-4 .row-4-container .sun-col {
+  width: 30%;
+  padding-left: 15px;
+}
+
+.wind-row-1,
+.wind-row-2,
+.sun-row-1,
+.sun-row-2 {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.row-4 label {
+  line-height: 2.1;
+  letter-spacing: 1px;
+  font-size: 17px;
+  color: rgb(220, 191, 153);
+}
+
+.row-4 span {
+  font-size: 15px;
+  text-align: left;
+}
+
+.col-3-container {
+  padding: 20px 25px;
+}
+
+.col-3 .forecast-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.col-3 .forecast-row {
+  border-bottom: 1px solid rgb(147, 153, 162);
+}
+
+.col-3 .forecast-row:last-child {
+  border-bottom: none;
+}
+
+.col-3 .forecast-row td {
+  padding: 16px 10px;
+  text-align: center;
+}
+
+.col-3 .forecast-row .day {
+  text-align: left;
+}
+
+.col-3 .forecast-row .image img {
+  width: 45px;
+  height: 45px;
+  background-color: #938d8d;
+  border-radius: 50%;
+  border: 1px solid rgb(147, 153, 162);
+}
+
+.col-3 .forecast-row .status {
+  text-transform: capitalize;
+}
+
+.col-3 .forecast-row .temp_max {
+  font-size: 20px;
+  color: rgb(220, 191, 153);
+}
+
+.col-3 .forecast-row .temp_min {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 998px) {
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    padding: 3vh 0vw;
+    margin: 0 5%;
+  }
+  .col-1 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 20px 0;
+  }
+  .col-1 ul {
+    flex-direction: row;
+    font-size: 2.5rem;
+  }
+  .col-1 .svg-inline--fa {
+    height: 60px;
+    width: 60px;
+    flex-direction: row;
+  }
+  .col-2 {
+    margin-top: 4%;
+    width: 100%;
+  }
+  .row-1 {
+    background: transparent;
+  }
+  .row-1 input[type="name"] {
+    font-size: 26px;
+    padding: 15px 50px;
+  }
+  .row-1 button {
+    font-size: 29.7px;
+    cursor: pointer;
+  }
+  .row-1 button .svg-inline--fa {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .row-2 {
+    min-height: 270px;
+  }
+  .row-2 .row-2-col-1-row-1 {
+    padding: 3px 50px;
+  }
+  .row-2 .row-2-col-1-row-1 h1 {
+    font-size: 45px;
+  }
+  .row-2 .row-2-col-1-row-1 p {
+    font-size: 30px;
+  }
+  .row-2 .row-2-col-1-row-2 span {
+    font-size: 45px;
+    padding-left: 50px;
+  }
+
+  .row-2 .row-2-col-2 img {
+    width: 180px;
+    height: 180px;
+    padding: 3px;
+    top: 250px;
+    right: 100px;
+    position: absolute;
+  }
+  .row-3 {
+    margin-top: 20px;
+    padding: 15px 30px 15px 30px;
+    height: auto;
+  }
+  .row-3 .row-3-header h1,
+  .col-3 .col-3-header h1,
+  .row-4 .row-4-container h1 {
+    font-size: 18.5px;
+  }
+  .row-3 .row-3-header label {
+    font-size: 18.5px;
+  }
+  .row-3 .carousel .hourly-col p {
+    font-size: 18.5px;
+  }
+  .row-3 .carousel .hourly-col img {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 20px;
+  }
+  .row-3 .carousel .hourly-col span {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 8px;
+  }
+  .row-4 {
+    height: 260px;
+    margin-top: 3%;
+  }
+  .row-4-container {
+    display: flex;
+    width: 100%;
+    padding: 15px 0px 20px 30px;
+  }
+  .row-4 .row-4-container .main-col:after,
+  .wind-col:after {
+    height: 215px;
+    top: -100px;
+  }
+  .row-4 label {
+    font-size: 20px;
+  }
+  .row-4 span {
+    font-size: 20px;
+  }
+  .col-3 {
+    margin-top: 3%;
+    width: 100%;
+  }
+  .col-3-container {
+    padding: 15px 30px;
+  }
+  .col-3 .forecast-row td {
+    font-size: 24px;
+    padding: 16px 10px;
+  }
+  .col-3 .forecast-row .image img {
+    width: 55px;
+    height: 55px;
+  }
+  .col-3 .forecast-row .temp_max {
+    font-size: 26px;
+  }
+  .col-3 .forecast-row .temp_min {
+    font-size: 22px;
+  }
+}

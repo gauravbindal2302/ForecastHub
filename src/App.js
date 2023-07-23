@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUmbrella } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+import "./App.css";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="app-row">
+        <div className="app-col-1">
+          <FontAwesomeIcon id="icon" icon={faUmbrella} />
+        </div>
+        <div className="app-col-2">
+          <div>
+            <div id="content">
+              <FontAwesomeIcon id="content-icon" icon={faUmbrella} />
+              <h1>ForecastHub</h1>
+              <p>Weather App</p>
+            </div>
+            <div className="get-started">
+              <Link to="/forecast">
+                <button type="submit">Get Started</button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
-
-export default App;
