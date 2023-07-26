@@ -10,7 +10,7 @@ import {
 import axios from "axios";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import config from "./config";
+import config from "../config";
 import "./Home.css";
 
 export default function Home() {
