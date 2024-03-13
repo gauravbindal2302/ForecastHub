@@ -2,8 +2,8 @@
 
 .home {
   margin: 0;
+  min-height: 100vh;
   padding: 0;
-  height: 100vh;
   width: 100vw;
   background-color: rgb(11, 19, 30);
 }
@@ -116,22 +116,22 @@
 }
 
 .row-2 {
+  display: flex;
   height: 26%;
   color: #d4d1d1;
   margin-top: -10px;
 }
-
-.row-2 .row-2-col-1-row-1 {
+.row-2-col-1 {
   width: 50%;
-  padding: 0.5px 40px;
+  padding-left: 40px;
 }
 
-.row-2 .row-2-col-1-row-1 h1 {
+.row-2 h1 {
   font-size: 32px;
   font-weight: 800;
 }
 
-.row-2 .row-2-col-1-row-1 p {
+.row-2 p {
   margin-top: -10px;
   font-size: 16px;
   font-weight: 600;
@@ -139,25 +139,19 @@
   text-transform: capitalize;
 }
 
-.row-2 .row-2-col-1-row-2 {
-  width: 50%;
-  padding-top: -10px;
-}
-
-.row-2 .row-2-col-1-row-2 span {
+.row-2 span {
   font-size: 45px;
   font-weight: 800;
-  padding-left: 40px;
 }
-
-.row-2 .row-2-col-2 {
+.row-2-col-2 {
   width: 50%;
-  position: absolute;
-  right: 70px;
-  top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
 }
 
-.row-2 .row-2-col-2 img {
+.row-2 img {
   width: 130px;
   height: 130px;
   border: 1px solid #fff;
@@ -353,133 +347,180 @@
   .home-container {
     display: flex;
     flex-direction: column;
-    padding: 3vh 0vw;
-    margin: 0 5%;
+    padding: 20px 0;
+    height: auto;
+    width: auto;
   }
+
   .col-1 {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     flex-direction: row;
     padding: 20px 0;
+    max-height: 3cqh;
   }
+
   .col-1 ul {
     flex-direction: row;
-    font-size: 2.5rem;
+    font-size: 20px;
   }
+
   .col-1 .svg-inline--fa {
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     flex-direction: row;
   }
+
   .col-2 {
-    margin-top: 4%;
+    margin-top: 20px;
     width: 100%;
   }
+
   .row-1 {
     background: transparent;
   }
+
   .row-1 input[type="name"] {
-    font-size: 26px;
+    font-size: 16px;
     padding: 15px 50px;
   }
+
   .row-1 button {
-    font-size: 29.7px;
+    height: 49.2px;
     cursor: pointer;
-  }
-  .row-1 button .svg-inline--fa {
-    font-size: 50px;
-    margin-bottom: 10px;
-  }
-  .row-2 {
-    min-height: 270px;
-  }
-  .row-2 .row-2-col-1-row-1 {
-    padding: 3px 50px;
-  }
-  .row-2 .row-2-col-1-row-1 h1 {
-    font-size: 45px;
-  }
-  .row-2 .row-2-col-1-row-1 p {
-    font-size: 30px;
-  }
-  .row-2 .row-2-col-1-row-2 span {
-    font-size: 45px;
-    padding-left: 50px;
+    display: flex;
   }
 
-  .row-2 .row-2-col-2 img {
-    width: 180px;
-    height: 180px;
-    padding: 3px;
-    top: 250px;
-    right: 100px;
-    position: absolute;
+  .row-1 button .svg-inline--fa {
+    margin-bottom: 10px;
   }
+
+  .row-2 h1 {
+    font-size: 30px;
+  }
+
+  .row-2 p {
+    font-size: 20px;
+  }
+
+  .row-2 span {
+    font-size: 40px;
+  }
+
+  .row-2 img {
+    width: 100px;
+    height: 100px;
+    padding: 3px;
+  }
+
   .row-3 {
     margin-top: 20px;
-    padding: 15px 30px 15px 30px;
-    height: auto;
+    padding: 10px 20px 15px 20px;
   }
+
   .row-3 .row-3-header h1,
   .col-3 .col-3-header h1,
   .row-4 .row-4-container h1 {
-    font-size: 18.5px;
+    font-size: 16px;
+  }
+
+  .row-3 .row-3-header {
+    flex-direction: column;
   }
   .row-3 .row-3-header label {
-    font-size: 18.5px;
+    font-size: 12px;
   }
+
+  .row-3 .carousel {
+    display: flex;
+    margin-top: 10px;
+    padding-bottom: 6px;
+    overflow-x: auto;
+  }
+
   .row-3 .carousel .hourly-col p {
-    font-size: 18.5px;
+    font-size: 14px;
   }
+
   .row-3 .carousel .hourly-col img {
-    width: 55px;
-    height: 55px;
-    margin-bottom: 20px;
+    width: 40px;
+    height: 40px;
   }
+
   .row-3 .carousel .hourly-col span {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 14px;
     padding: 0 8px;
   }
   .row-4 {
-    height: 260px;
-    margin-top: 3%;
+    margin-top: 20px;
   }
-  .row-4-container {
-    display: flex;
-    width: 100%;
-    padding: 15px 0px 20px 30px;
+  .row-4 .row-4-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 30px;
   }
+
   .row-4 .row-4-container .main-col:after,
   .wind-col:after {
-    height: 215px;
-    top: -100px;
+    display: none;
   }
+
+  .row-4 .row-4-container .main-col,
+  .row-4 .row-4-container .wind-col,
+  .row-4 .row-4-container .sun-col {
+    width: 100%;
+    padding: 0;
+  }
+  .row-4 .row-4-container .main-col .main-row-1,
+  .row-4 .row-4-container .main-col .main-row-2 {
+    padding: 0 20px;
+    margin-right: 30px;
+  }
+
+  .row-4 .row-4-container .wind-col .wind-row-1,
+  .row-4 .row-4-container .wind-col .wind-row-2,
+  .row-4 .row-4-container .sun-col .sun-row-1,
+  .row-4 .row-4-container .sun-col .sun-row-2 {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 6px;
+  }
+
   .row-4 label {
-    font-size: 20px;
+    font-size: 18px;
   }
+
   .row-4 span {
-    font-size: 20px;
+    font-size: 16px;
   }
+
   .col-3 {
-    margin-top: 3%;
+    margin-top: 20px;
     width: 100%;
   }
+
   .col-3-container {
     padding: 15px 30px;
   }
+
   .col-3 .forecast-row td {
-    font-size: 24px;
+    font-size: 18px;
     padding: 16px 10px;
   }
+
   .col-3 .forecast-row .image img {
-    width: 55px;
-    height: 55px;
+    width: 40px;
+    height: 40px;
   }
+
   .col-3 .forecast-row .temp_max {
-    font-size: 26px;
+    font-size: 18px;
   }
+
   .col-3 .forecast-row .temp_min {
-    font-size: 22px;
+    font-size: 18px;
   }
 }

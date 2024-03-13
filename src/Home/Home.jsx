@@ -138,15 +138,11 @@ export default function Home() {
           <div className="row-2">
             {weatherData && weatherData.currentWeatherData && (
               <div className="row-2-col-1">
-                <div className="row-2-col-1-row-1">
-                  <h1>{weatherData.currentWeatherData.name}</h1>
-                  <p>{weatherData.currentWeatherData.weather[0].description}</p>
-                </div>
-                <div className="row-2-col-1-row-2">
-                  <span>
-                    {Math.round(weatherData.currentWeatherData.main.temp)}°
-                  </span>
-                </div>
+                <h1>{weatherData.currentWeatherData.name}</h1>
+                <p>{weatherData.currentWeatherData.weather[0].description}</p>
+                <span>
+                  {Math.round(weatherData.currentWeatherData.main.temp)}°
+                </span>
               </div>
             )}
             {weatherData && weatherData.currentWeatherData && (
